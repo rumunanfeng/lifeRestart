@@ -142,7 +142,7 @@ class App{
             return t;
         }
         const freshTotal = ()=>{
-            propertyPage.find('#total').text(`可用属性点：${this.#totalMax - total()}`);
+            propertyPage.find('#total').text(`可用属性点：${this.#totalMax - total() + 30}`);
         }
         const getBtnGroups = (name, min, max)=>{
             const group = $(`<li>${name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>`);
